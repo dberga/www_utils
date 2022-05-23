@@ -1,0 +1,27 @@
+To create a new Phonegap App, follow this guide:
+
+	http://phonegap.com/install/
+
+Or learn how to install, step by step on this guide:
+
+	http://docs.phonegap.com/en/edge/guide_platforms_index.md.html
+
+
+
+------------------------------------------------------------------------
+
+To start developing on PartyMaps release:
+
+1. Install android sdk
+	http://developer.android.com/sdk/index.html#win-bundle
+2. Configure the Eclipse ADT-Plugin
+	http://developer.android.com/sdk/installing/installing-adt.html
+
+3. Open Eclipse->File->New->Project->Other->Android Project From Existing Code
+4. Browse on your directory to find "Project for Eclipse" and select Finish
+5. Your'e good to go
+	5.1 Code on /exemple/platforms/android/assets/www
+	5.2 Execute with Eclipse execution module for Android
+
+
+

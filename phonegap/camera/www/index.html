@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+    Grup: 09
+	Authors:
+		David Berga
+		Sergi Cabanyes
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile-1.4.0.css">
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile.external-png-1.4.0.css">
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile.icons-1.4.0.css">
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile.inline-png-1.4.0.css">
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile.structure-1.4.0.css">
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile.theme-1.4.0.css">
+		
+        <title>Hello World</title>   
+		   
+    </head>
+    <body>
+
+		<script type="text/javascript" src="js/jquery/jquery-1.10.1.js"></script>
+		<script type="text/javascript" src="js/jquerymobile/jquery.mobile-1.4.0.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript">
+            app.initialize();
+        </script>
+		<script type="text/javascript" src="js/camera.js"></script>
+
+		
+		<div data-role="page" id="pageone">
+		  <div data-role="header">
+		  <h1>Aplicacio</h1>
+		  </div>
+
+		  <div data-role="content">
+		  <p></p>
+		  <button onclick="capturePhoto();">Fer foto</button> <br>
+		  <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">Carregar foto de llibreria</button><br>
+		  <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">Carregar foto de album</button><br>
+			<div id="imgfetes">
+				<!-- Append les fotos aqui
+				-->
+				
+			</div> 
+			<div id="imgcarregada">	
+				<!-- Carregar imatge aqui
+				-->
+				
+			</div>
+		  </div>
+		  <div data-role="footer">
+		  <h1>Footer</h1>
+		  </div>
+		</div> 
+		
+    </body>
+</html>

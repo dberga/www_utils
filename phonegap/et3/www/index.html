@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+    Grup: 09
+	Authors:
+		David Berga
+		Sergi Cabanyes
+	motdepas: 1234
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile-1.4.0.css">
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile.external-png-1.4.0.css">
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile.icons-1.4.0.css">
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile.inline-png-1.4.0.css">
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile.structure-1.4.0.css">
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile.theme-1.4.0.css">
+		
+        <title>Hello World</title>
+		
+		
+		   
+		   
+		   
+    </head>
+    <body>
+        <!--<div class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>
+		-->
+		<script type="text/javascript" src="js/jquery/jquery-1.10.1.js"></script>
+		<script type="text/javascript" src="js/jquerymobile/jquery.mobile-1.4.0.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+		<script type="text/javascript" src="js/register.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+		
+		   
+		<div data-role="page" id="pageone">
+		  <div data-role="header">
+		  <h1>Aplicacio</h1>
+		  </div>
+
+		  <div data-role="content">
+		  <p></p>
+		  <a href="#pageregister" data-role="button">Registrar</a>
+		  <a href="#pagelogin" data-role="button">Autenticar</a>
+		  </div>
+
+		  <div data-role="footer">
+		  <h1>Footer</h1>
+		  </div>
+		</div> 
+
+		<div data-role="page" id="pageregister">
+		  <div data-role="header">
+		  <h1>Aplicacio</h1>
+		  </div>
+
+		  <div data-role="content" id="beforeregister"  style="visibility:visible" >
+		  <p>FORM REGISTRAR</p>
+		  
+
+		  	
+		  
+		  <form action="" id="formregister">
+			Grup de practiques: 
+			<input type="text" name="grup" value="00" id="rgrup"></input></br>
+			Mot de pas: 
+			<input type="text" name="motdepas" value="1234" id="rmotdepas"></input></br>
+			uNIS1: 
+			<input type="text" name="integrants[1]" value="uXXXXX" id="rintegrants1"></input></br>
+			uNIS2: 
+			<input type="text" name="integrants[2]" value="uYYYYY" id="rintegrants2"></input></br>
+		  </form> 
+		  
+		  
+		  
+		  
+		  
+		  <button id="botoregistrar">REGISTER</button>
+		  
+		  </div>
+		  <div data-role="content" id="afterregister" style="visibility:hidden">
+		  <h2>REGISTRAT!</h2>
+		  </div>
+		  <a href="#pageone" data-role="button">TORNAR</a>
+		 
+
+		  <div data-role="footer">
+		  <h1>Aplicacio</h1>
+		  </div>
+		</div> 
+		
+
+		<div data-role="page" id="pagelogin">
+		  <div data-role="header">
+		  <h1>Aplicacio</h1>
+		  </div>
+
+		  <div data-role="content" id="beforelogin" style="visibility:visible">
+		  <p>FORM LOGIN</p>
+		  
+
+		  <form action="" id="formlogin">
+			Grup de practiques: 
+			<input type="text" name="grup" value="00" id="agrup"><br>
+			Mot de pas: 
+			<input type="text" name="motdepas" value="1234" id="amotdepas"><br>
+		  </form> 
+		  
+		  
+		  
+		  <button id="botologin">LOGIN</button>
+		  
+		  </div>
+		  <div data-role="content" id="afterlogin" style="visibility:hidden">
+		  <h2>LOGGEJAT!</h2>
+		  </div>
+		  <a href="#pageone" data-role="button">TORNAR</a>
+
+		  <div data-role="footer">
+		  <h1>FOOTER</h1>
+		  </div>
+		</div> 
+		
+	
+		</div> 
+		
+		
+		
+    </body>
+</html>
